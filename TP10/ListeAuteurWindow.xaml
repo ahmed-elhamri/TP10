@@ -1,0 +1,28 @@
+﻿<Window x:Class="TP10.ListeAuteurWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP10"
+        mc:Ignorable="d"
+        Title="ListeAuteurWindow" Height="450" Width="800" ResizeMode="CanMinimize">
+    <Grid Margin="10,10,10,10">
+        <DataGrid Name="AuteursDataGrid" 
+                  AutoGenerateColumns="False" 
+                  Margin="0,0,202,10" 
+                  ScrollViewer.HorizontalScrollBarVisibility="Visible" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*" />
+                <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="583,0,0,167" Height="126" Width="187">
+            <Button Name="AjouterBtn" Content="Ajouter" Margin="5" Click="AjouterBtn_Click" />
+            <Button Name="ModifierBtn" Content="Modifier" Margin="5" Click="ModifierBtn_Click" />
+            <Button Name="SupprimerBtn" Content="Supprimer" Margin="5" Click="SupprimerBtn_Click" Width="NaN" />
+            <Button x:Name="OuvrirMenuPrincipale" Content="Menu Principale" Click="OuvrirMenuPrincipale_Click" Width="177" Margin="5,5,5,5"  />
+        </StackPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="TP10.AjouterModifierLivreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AjouterModifierLivreWindow" Height="450" Width="360">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Titre" FontSize="16" Margin="0,5"/>
+            <TextBox Name="TitreTxt" Margin="0,0,0,10"/>
+
+            <Label Content="Auteur" FontSize="16" Margin="0,5"/>
+            <ComboBox Name="AuteursCbx" Margin="0,0,0,10"/>
+
+            <Label Content="Nombre de pages" FontSize="16" Margin="0,5"/>
+            <TextBox Name="NbPagesTxt" Margin="0,0,0,10"/>
+
+            <Label Content="Prix" FontSize="16" Margin="0,5"/>
+            <TextBox Name="PrixTxt" Margin="0,0,0,10"/>
+
+            <Button Content="Enregistrer" HorizontalAlignment="Center" Width="128" Height="38" Margin="0,20,0,0" Click="SaveLivre_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
